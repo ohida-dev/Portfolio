@@ -228,3 +228,238 @@ body::after{
      color: #E1306C;
     transform: scale(1.15);
 }
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .top-bar {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .top-bar a {
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 17px;
+    }
+
+    .Logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .card-container {
+        width: 90%;
+        margin: 110px auto 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .card img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .card-title {
+        font-size: 36px;
+    }
+
+    .card-content h3 {
+        font-size: 27px;
+    }
+
+    .card-content p {
+        font-size: 17px;
+        padding: 0 25px;
+    }
+
+    .socials {
+        gap: 22px;
+    }
+
+    .socials a {
+        font-size: 36px;
+    }
+}
+
+
+/* ---------- PHONES ---------- */
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Background */
+    body {
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .top-bar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 12px 10px 18px;
+    }
+
+    .top-bar a {
+        margin: 5px 0;
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    .top-bar-handle {
+        width: 55px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .Logo {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* ---------- CARD ---------- */
+
+    .card-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 90px auto 30px;
+        padding: 0 15px;
+
+        /* Don't make the whole card jump too much on phones */
+        transform: none;
+    }
+
+    .card-container:hover {
+        transform: none;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+        padding-bottom: 20px;
+        border-radius: 12px;
+    }
+
+
+    /* ---------- PROFILE IMAGE ---------- */
+
+    .card img {
+        width: min(65vw, 250px);
+        height: min(65vw, 250px);
+        margin: 20px auto;
+    }
+
+
+    /* ---------- TITLE ---------- */
+
+    .card-title {
+        margin-top: 15px;
+        font-size: clamp(28px, 9vw, 38px);
+        line-height: 1.2;
+        padding: 0 10px;
+    }
+
+
+    /* ---------- SUBTITLE ---------- */
+
+    .card-content h3 {
+        font-size: clamp(21px, 6vw, 28px);
+        padding: 0 10px;
+    }
+
+
+    /* ---------- DESCRIPTION ---------- */
+
+    .card-content p {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- BUTTON ---------- */
+
+    .card-content .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 9px 18px;
+    }
+
+
+    /* ---------- SOCIAL ICONS ---------- */
+
+    .socials {
+        gap: 18px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+
+    .socials a {
+        font-size: 32px;
+    }
+}
+
+
+/* ---------- VERY SMALL PHONES ---------- */
+
+@media (max-width: 380px) {
+
+    .card-container {
+        padding: 0 10px;
+        margin-top: 85px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 27px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .socials {
+        gap: 14px;
+    }
+
+    .socials a {
+        font-size: 28px;
+    }
+}
